@@ -125,7 +125,7 @@ if [ "$build_target" == "android-12.0" ];then
     ( cd sas-creator; bash lite-adapter.sh 32; xz -c s.img -T0 > ../release/$rom_fp/system-squeak-arm32_binder64-ab-vndklite-gogapps.img.xz )
     ( cd sas-creator; bash securize.sh s.img; xz -c s-secure.img -T0 > ../release/$rom_fp/system-squeak-arm32_binder64-ab-vndklite-gogapps-secure.img.xz )
 
-	buildVariant treble_a64_boS-userdebug squeak-arm32_binder64-ab-floss
+	buildVariant treble_a64_bfS-userdebug squeak-arm32_binder64-ab-floss
     ( cd sas-creator; bash lite-adapter.sh 32; xz -c s.img -T0 > ../release/$rom_fp/system-squeak-arm32_binder64-ab-vndklite-floss.img.xz )
     ( cd sas-creator; bash securize.sh s.img; xz -c s-secure.img -T0 > ../release/$rom_fp/system-squeak-arm32_binder64-ab-vndklite-floss-secure.img.xz )
 elif [ "$build_target" == "android-11.0" ];then
